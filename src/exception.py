@@ -1,5 +1,6 @@
 import sys   #provides functions and variables which are used to manipulate different parts of the Python Runtime Environment
-import logging
+from src.logger import logging
+
 # creating a custom error message function
 def error_message_detail(error,error_detail:sys):   #whenever an error-> push it to my own custom message. Error detail will be present inside sys
      _,_,exc_tb = error_detail.exc_info()            # file, line_no etc of exception
@@ -16,7 +17,5 @@ class CustomException(Exception):                           # Exception is the p
 
     def __str__(self):
         return self.error_message
-
-
 
 
