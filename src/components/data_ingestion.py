@@ -13,6 +13,8 @@ from dataclasses import dataclass                       # used to create class v
 
 from src.components.data_transformation import DataTransformation, DataTransformationConfig
 
+from src.components.model_trainer import ModelTrainerConfig, ModelTrainer
+
 # any input that is required will be passed to this class
 @dataclass                                              # decorator - allows to directly define class variables without __init__
 class DataIngestionConfig:
@@ -55,7 +57,10 @@ if __name__ == "__main__":
     train_data, test_data = obj.initiate_data_ingestion()
 
     data_transformation = DataTransformation()            #creating an object/initializing
-    data_transformation.initiate_data_transformation(train_data,test_data)    #initiating a method of this object
+    train_arr, test_arr,_= data_transformation.initiate_data_transformation(train_data,test_data)    #initiating a method of this object
+
+    modeltrainer = ModelTrainer()
+    print(str(round(modeltrainer.initiate_model_trainer(train_arr,test_arr)*100,2))+'%')
    
             
 
