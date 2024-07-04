@@ -1,12 +1,15 @@
 from flask import Flask, request, render_template
 import numpy as np
 import pandas as pd
+from logging import FileHandler,WARNING
 
 from sklearn.preprocessing import StandardScaler   #to scale pickle file
 from src.pipeline.predict_pipeline import CustomData,PredictPipeline
 
 
-application = Flask(__name__)       #entry point to application
+application = Flask(__name__,template_folder="templates")       #entry point to application
+file_handler = FileHandler('errorlog.txt')
+file_handler.setLevel(WARNING)
 
 app =application
 
