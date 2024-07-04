@@ -1,1 +1,65 @@
-<h1> Welcome to the Home Page </h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Exam Performance Indicator</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            background: #ffffff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            width: 100%;
+        }
+        h1 {
+            color: #343a40;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #495057;
+            margin-top: 20px;
+        }
+        p {
+            color: #6c757d;
+        }
+        .btn-primary {
+            margin-top: 20px;
+            display: block;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Student Exam Performance Indicator</h1>
+        <h2>Aim of the Project</h2>
+        <p>The aim of this project is to predict the performance of students in their mathematics exams based on various factors such as gender, race, parental level of education, lunch type, test preparation course, and scores in reading and writing.</p>
+        <h2>Problem Statement</h2>
+        <p>This project addresses the issue of understanding and predicting student performance in exams. By analyzing different factors that contribute to academic success, educators and parents can provide better support and resources to students who need it the most.</p>
+        <h2>Solution</h2>
+        <p>Using a machine learning model, this application takes in various inputs related to a student's background and previous scores to predict their likely performance in mathematics exams. This helps in identifying students who may need additional help and resources.</p>
+        <h2>Technical Details</h2>
+        <ul>
+            <li>Deployed on AWS Elastic Beanstalk and CodePipeline</li>
+            <li>Front end: Flask</li>
+            <li>Major modules: Numpy, Pandas, Sklearn, Matplotlib.pyplot</li>
+            <li>Regression problem - Regression algorithms used with hyperparameter tuning</li>
+            <li>Data set source: (leave for now)</li>
+            <li>Built by: Feroz Khan</li>
+        </ul>
+        <a href="/predictdata" class="btn btn-primary">Fill the Form</a>
+    </div>
+</body>
+</html>
