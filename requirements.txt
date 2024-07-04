@@ -53,3 +53,5 @@ tzdata
 wcwidth
 Werkzeug
 xgboost
+ipython
+contourpy
