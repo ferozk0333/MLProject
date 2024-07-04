@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -43,7 +43,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>Student Exam Performance Indicator</h1>
+        <h1>Student Test Performance Indicator</h1>
         <h2>Aim of the Project</h2>
         <p>The aim of this project is to predict the performance of students in their mathematics exams based on various factors such as gender, race, parental level of education, lunch type, test preparation course, and scores in reading and writing.</p>
         <h2>Problem Statement</h2>
@@ -60,6 +60,83 @@
             <li>Built by: Feroz Khan</li>
         </ul>
         <a href="/predictdata" class="btn btn-primary">Fill the Form</a>
+    </div>
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Exam Performance Indicator</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+        .container {
+            background: #ffffff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: #343a40;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #495057;
+            margin-top: 20px;
+        }
+        p {
+            color: #6c757d;
+        }
+        .btn-primary {
+            margin-bottom: 20px;
+            display: block;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <h1>Student Exam Performance Indicator</h1>
+        <a href="/predictdata" class="btn btn-primary">Test Application</a>
+        <h2>Learning Outcome</h2>
+        <p>Understanding modular programming approach to build data solutions for clients.</p>
+        
+        <h2>Problem Statement</h2>
+        <p>The CAT is an MBA entrance exam for admission to B-schools in India. An eminent test prep institute has data of 1000 students with features including gender, race, parental education, lunch type, test prep course, writing score, and reading score. The institute wants to understand how these factors influence a student's performance in the math section of the test.</p>
+        
+        <h2>Proposed Solution</h2>
+        <p>As a data scientist, the aim is to first determine if there is a significant relationship between the independent variables and the target feature. If so, the following approach will be taken:</p>
+        <ol>
+            <li>Understanding the Problem Statement: Analyze the provided data to identify patterns and correlations between student attributes and math scores.</li>
+            <li>Data Collection from data source</li>
+            <li>Exploratory Data Analysis: Handling missing values, duplicates, balancing dataset, basic statistics and more.</li>
+            <li>Data Pre-Processing: Cleanse and prepare the data for machine learning modeling, standard scaling.</li>
+            <li>Model Training: As this is a regression problem, test algorithms such as linear regression, decision tree regression, to build predictive models.</li>
+            <li>Hyperparameter Tuning: Optimize model performance by tuning hyperparameters and identify best parameters.</li>
+            <li>Build Application and Deploy It: Develop an end-to-end application that allows users to input student data and receive predicted math scores.</li>
+        </ol>
+        
+        <h2>Technical Details</h2>
+        <ul>
+            <li>Deployed on AWS Elastic Beanstalk with CI CodePipeline</li>
+            <li>Front end: Flask</li>
+            <li>Major modules: Numpy, Pandas, Sklearn, Matplotlib.pyplot</li>
+            <li>Regression problem - Regression algorithms used with hyperparameter tuning</li>
+            <li>Developed by: Feroz Khan</li>
+            <li>GitHub: <a href="https://github.com/ferozk0333/MLProject" target="_blank">Link to GitHub Repository</a></li>
+        </ul>
     </div>
 </body>
 </html>
