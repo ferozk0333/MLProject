@@ -25,7 +25,6 @@ kiwisolver==1.4.5
 MarkupSafe==2.1.5
 matplotlib==3.9.0
 matplotlib-inline==0.1.7
--e git+https://github.com/ferozk0333/MLProject.git@c016bc5f63ecd73b1e5a89af73c9d665a6ee5074#egg=MLProject
 nest-asyncio==1.6.0
 numpy==2.0.0
 packaging==24.1
