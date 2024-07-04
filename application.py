@@ -40,7 +40,7 @@ def predict_datapoint():                                             #fetching d
 
         predict_pipeline = PredictPipeline()                            #object of PredictPipeline class
         results = predict_pipeline.predict(pred_df)                     #transfers flow to predict fn in predict_pipeline.py
-        return render_template('home.html', results = results[0])       #all the values are in list format, so results[0]
+        return render_template('home.html', results = str(round(results[0],2)))       #all the values are in list format, so results[0]
     
     #testing app
     if __name__=="__main__":
