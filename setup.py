@@ -22,7 +22,8 @@ setup(
     author = 'Feroz Khan',
     author_email = 'ferozk0333@gmail.com',
     packages = find_packages(),
-    # install_requires = ['pandas','numpy','seaborn'] -- this method is not feasible as it is hard coded
+    install_requires = ['pandas','numpy','matplotlib','seaborn','scikit-learn','catboost','xgboost','dill','flask'] # this method is not feasible as it is hard coded
 
-    install_requires = get_requirements('requirements.txt')
+    #install_requires = get_requirements('requirements.txt')
 )
+
