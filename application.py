@@ -6,8 +6,9 @@ from sklearn.preprocessing import StandardScaler   #to scale pickle file
 from src.pipeline.predict_pipeline import CustomData,PredictPipeline
 
 
-app = Flask(__name__)       #entry point to application
+application = Flask(__name__)       #entry point to application
 
+app =application
 
 # route for home page
 
