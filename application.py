@@ -19,11 +19,11 @@ def index():
 
 @app.route('/predictdata',methods=['GET','POST'])
 def predict_datapoint():                                             #fetching data and returning output
-    print("Success12")
+    
     if request.method == 'GET':
         return render_template('home.html')
     else:   #POST request
-        print("Success123")
+        
         data=CustomData(
             gender=request.form.get('gender'),
             race_ethnicity=request.form.get('ethnicity'),
@@ -36,7 +36,7 @@ def predict_datapoint():                                             #fetching d
         )
 
         pred_df = data.get_data_as_data_frame()                         #function defined in predict_pipeline
-        print(pred_df)
+        
 
         predict_pipeline = PredictPipeline()                            #object of PredictPipeline class
         results = predict_pipeline.predict(pred_df)                     #transfers flow to predict fn in predict_pipeline.py
@@ -45,3 +45,4 @@ def predict_datapoint():                                             #fetching d
     #testing app
     if __name__=="__main__":
         app.run(host="0.0.0.0")  
+        

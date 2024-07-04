@@ -8,4 +8,4 @@ catboost
 xgboost
 dill
 flask
-#-e .       # triggers executes setup.py
+-e .       # triggers executes setup.py
