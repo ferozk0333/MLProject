@@ -12,7 +12,7 @@ https://github.com/ferozk0333/MathMentor-Machine_Learning_based_Test_Score_Predi
 
 
 ## Docker Setup In EC2 commands to be Executed
-#optinal
+#optional
 
 sudo apt-get update -y
 
