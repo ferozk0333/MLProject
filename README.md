@@ -11,7 +11,7 @@ Description: An end-to-end regression solution implemented using a modular progr
 https://github.com/ferozk0333/MathMentor-Machine_Learning_based_Test_Score_Predictor/assets/48884151/d5b1190d-caf7-403a-8dfc-97c715407505
 
 
-Docker Setup In EC2 commands to be Executed
+## Docker Setup In EC2 commands to be Executed
 #optinal
 
 sudo apt-get update -y
@@ -28,8 +28,8 @@ sudo usermod -aG docker ubuntu
 
 newgrp docker
 
-Configure EC2 as self-hosted runner:
-Setup github secrets:
+## Configure EC2 as self-hosted runner:
+## Setup github secrets:
 AWS_ACCESS_KEY_ID=
 
 AWS_SECRET_ACCESS_KEY=
